@@ -1,0 +1,57 @@
+1.  Inicio
+2.  funcion principal()
+3.      k, i[0,n]
+4.      k1, i[0,n]
+5.      valor,i[0-n] 
+6.      j, i[0-n] <-- 0 
+7.      Escribir "Ingrese un numero positivo para descomponer" 
+8.      Leer k          //1920
+9.     k1<--k          //k1 <-- 1920
+10.     Si (k1 > 0) entonces            // 1920 > 0 true 
+11.          Mientras(k1 > 0) entonces          // 1920 > 0 true  //192 > 0 true  //19 > 0 true  //1 > 0 true //0 > 0 false 
+12.              valor <-- obtenerResiduo(k1)   // 0  // 2 // 9 // 1
+13               Escribir valor + " * 10 elevado a la potencia " + j        // 0 * 10 elevado a la potencia 0 // 
+                                                                            // 2 * 10 elevado a la potencia 1 // 
+                                                                            // 9 * 10 elevado a la potencia 2 // 
+                                                                            // 1 * 10 elevado a la potencia 3 // 
+
+14.              k1 <-- obtnerDivision(k1)                                  // k1 = 192 
+                                                                            // k1 = 19
+                                                                            // k1 = 1
+                                                                            // k1 = 0
+
+15.              j <-- j + 1                                                // j = 1 
+                                                                            // j = 2
+                                                                            // j = 3
+                                                                            // j = 4
+16.         fin_Mientras
+17.      Caso contrario
+18.          Escribir "Error numero fuera de rango"   
+19.     Fin Si
+20. fin funcion principal
+
+
+21. funcion obtenerResiduo(a, i) : i     // 1920  // 192  // 19 // 1 
+22.     residuo, d[0-n] 
+23.     residuo <-- a MOD 10            //1920 MOD 10 = 0 // 192 MOD 10 = 2 // 19 MOD 10 = 9 // 1 MOD 10 = 1 
+24.     return residuo                  // 0 // 2 // 9 // 1
+25. fin funcion obtenerResiduo
+
+
+26. funcion obtnerDivisión(b, i) : i  // 1920
+                                      // 192
+                                      // 19
+                                      // 1
+27.     total, i[0-n]
+28.     total <-- b / 10              // 1920 / 10 = 192
+                                      // 192 / 10 = 19
+                                      // 19 / 10 = 1
+                                      // 1 / 10 = 0
+
+29.     return total                  // 192
+                                      // 19
+                                      // 1
+                                      // 0
+30. fin funcion obtnerDivision
+
+31. Fin
