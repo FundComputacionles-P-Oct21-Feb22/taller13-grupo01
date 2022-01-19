@@ -1,0 +1,36 @@
+1.  Inicio
+2.  funcion principal()
+3.      k, i[0,n]
+4.      k1, i[0,n]
+5.      valor,i[0-n] 
+6.      j, i[0-n] <-- 0 
+7.      Escribir "Ingrese un numero positivo para descomponer" 
+8.      Leer k          
+9.      k1<--k         
+10.     Si (k1 > 0) entonces             
+11.          Mientras(k1 > 0) entonces         
+12.              valor <-- obtenerResiduo(k1)   
+13               Escribir valor + " * 10 elevado a la potencia " + j        
+14.              k1 <-- obtnerDivision(k1)                                  
+15.              j <-- j + 1                                                
+16.         fin_Mientras
+17.      Caso contrario
+18.         Escribir "Error numero fuera de rango"   
+19.     Fin Si
+20. fin funcion principal
+
+
+21. funcion obtenerResiduo(a, i) : i      
+22.     residuo, d[0-n] 
+23.     residuo <-- a MOD 10           
+24.     return residuo                  
+25. fin funcion obtenerResiduo
+
+
+26. funcion obtnerDivision(b, i) : i  
+27.     total, i[0-n]
+28.     total <-- b / 10              
+29.     return total                  
+30. fin funcion obtnerDivision
+
+31. Fin
